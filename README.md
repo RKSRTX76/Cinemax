@@ -9,6 +9,7 @@ It offers a seamless user experience.The app adheres to clean code principles, e
 With this app you can get information about Movies and TV series, watch trailer, search and find the latest, most popular and trending movies and TV series. You can also create bookmarks list.
 
 ## Key Features
+
 **Comprehensive Information:** Explore detailed Movie and TV series data, including trailers, ratings, genres, and more.
 **Effortless Exploration:** Search and browse the latest, most popular, and trending content with ease.
 **Modern UI:** The app leverages *Jetpack Compose*, a modern Android UI toolkit, to create a seamless and interactive user experience.
