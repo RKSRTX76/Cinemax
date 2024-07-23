@@ -224,6 +224,13 @@ class MediaDetailsViewModel @Inject constructor(
 
     private fun loadCastList(isRefresh: Boolean, type: String) {
         viewModelScope.launch {
+            _mediaDetailsScreenState.update {
+                it.copy(
+                    castList = emptyList(), // Clear the existing cast list
+                    isLoading = true,
+                )
+            }
+
             extraDetailsRepository.getCastList(
                 isRefresh = isRefresh,
                 type = type,
@@ -232,18 +239,23 @@ class MediaDetailsViewModel @Inject constructor(
             ).collect { result ->
                 when (result) {
                     is Resource.Error -> {
-                        Unit
+                        _mediaDetailsScreenState.update {
+                            it.copy(
+                                isLoading = false,
+                            )
+                        }
                     }
                     is Resource.Loading -> {
                         _mediaDetailsScreenState.update {
-                            it.copy(isLoading = result.isLoading)
+                            it.copy(isLoading = true)
                         }
                     }
                     is Resource.Success -> {
                         result.data?.let { castList ->
                             _mediaDetailsScreenState.update {
                                 it.copy(
-                                    castList = castList
+                                    castList = castList,
+                                    isLoading = false
                                 )
                             }
                         }
