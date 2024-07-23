@@ -25,8 +25,6 @@ class MediaDetailsViewModel @Inject constructor(
     private val _mediaDetailsScreenState = MutableStateFlow(MediaDetailsScreenState())
     val mediaDetailsScreenState = _mediaDetailsScreenState.asStateFlow()
 
-
-
     fun onEvent(event : MediaDetailsScreenEvents){
         when(event){
             is MediaDetailsScreenEvents.NavigateToWatchVideo -> {

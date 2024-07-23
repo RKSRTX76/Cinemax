@@ -75,9 +75,6 @@ fun BookmarkedMediaListScreen(
     val viewModel = hiltViewModel<MainViewModel>()
     val mainUiState by viewModel.mainUiState.collectAsState()
 
-    // Add a log to check the state received
-//    Log.d("BookmarkedMediaListScreen", "Bookmarked media: ${mainUiState.bookmarkedMedia}")
-
     val toolbarHeightPx = with(LocalDensity.current) { BigRadius.dp.roundToPx().toFloat() }
     val toolbarOffsetHeightPx = remember { mutableFloatStateOf(0f) }
     val nestedScrollConnection = remember {

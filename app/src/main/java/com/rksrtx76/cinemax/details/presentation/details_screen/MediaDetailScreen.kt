@@ -88,10 +88,10 @@ fun MediaDetailScreen(
                         isVideoPlaying = isPlaying
                     },
                     navController = navController,
-                    isBookmarked = isBookmarked, // Pass bookmark state
+                    isBookmarked = isBookmarked,
                     onBookmarkToggle = { newBookmarkState ->
                         isBookmarked = newBookmarkState
-                        onBookmarkToggle(media.id,newBookmarkState) // Notify parent about bookmark change
+                        onBookmarkToggle(media.id,newBookmarkState)
                     }
                 )
 
