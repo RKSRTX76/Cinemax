@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cinemax</string>
+    <string name="language">"Language: "</string>
+    <string name="release_date">"Release Date: "</string>
+    <string name="votes">" Votes "</string>
+    <string name="overview">"Overview "</string>
+    <string name="couldn_t_load_data">Couldn\'t load data</string>
+    <string name="trending">Trending Now</string>
+    <string name="tv_series">TV Series</string>
+    <string name="recommended">Recommended</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="see_all">See All</string>
+    <string name="special">Special</string>
+    <string name="movies_shows_and_more">Movies, Shows And More</string>
+    <string name="popular">Popular</string>
+    <string name="no_video_available_at_the_moment">No video available at the moment</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="similar">Similar</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="similar_to">Similar to\n✨ %1$s ✨</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="airing_today">Airing Today</string>
+    <string name="see_more">See more</string>
+    <string name="all_cast">All Cast</string>
+    <string name="cast">Cast</string>
+    <string name="bookmarked_media">Bookmarked Media</string>
+    <string name="added_to_bookmark">Added to Bookmark</string>
+    <string name="removed_from_bookmark">Removed from Bookmark</string>
+</resources>
