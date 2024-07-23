@@ -1,6 +1,7 @@
 # Cinemax : Discover and Connect with Your Favorite Movies!
 
 ## App Link
+https://drive.google.com/file/d/1_-Dws3Xw7HhiTxK3GmXMALqC2Bvn9ZtD/view?usp=sharing
 
 ## About the App
 *Cinemax* is a dynamic Android app, crafted with cutting-edge technologies like Jetpack Compose and Kotlin, delivering an immersive experience for movie and TV series enthusiasts. 
