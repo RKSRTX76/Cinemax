@@ -10,15 +10,15 @@ With this app you can get information about Movies and TV series, watch trailer,
 
 ## Key Features
 
-**Comprehensive Information:** Explore detailed Movie and TV series data, including trailers, ratings, genres, and more.
-**Effortless Exploration:** Search and browse the latest, most popular, and trending content with ease.
-**Modern UI:** The app leverages *Jetpack Compose*, a modern Android UI toolkit, to create a seamless and interactive user experience.
-**Kotlin:** Developed entirely in *Kotlin*, the codebase benefits from the conciseness and expressiveness of the language, promoting efficient and readable code.
-**MVVM Design Pattern:** The application structure is organized following the *MVVM* design pattern, promoting separation of concerns and facilitating maintainability.
-**Dagger Hilt:** Dependency injection is handled by *Dagger Hilt*, streamlining the management of dependencies and improving the overall architecture.
-**API:** The app fetches all its data from themoviedb.org's API (https://developer.themoviedb.org/docs/getting-started)
-**Solid Architecture:** The MVVM design pattern promotes code clarity and maintainability, while Dagger Hilt streamlines dependency management.
-**Offline Availability:** Ensuring users best possible experience even without an active internet connection.
+- **Comprehensive Information:** Explore detailed Movie and TV series data, including trailers, ratings, genres, and more.
+- **Effortless Exploration:** Search and browse the latest, most popular, and trending content with ease.
+- **Modern UI:** The app leverages *Jetpack Compose*, a modern Android UI toolkit, to create a seamless and interactive user experience.
+- **Kotlin:** Developed entirely in *Kotlin*, the codebase benefits from the conciseness and expressiveness of the language, promoting efficient and readable code.
+- **MVVM Design Pattern:** The application structure is organized following the *MVVM* design pattern, promoting separation of concerns and facilitating maintainability.
+- **Dagger Hilt:** Dependency injection is handled by *Dagger Hilt*, streamlining the management of dependencies and improving the overall architecture.
+- **API:** The app fetches all its data from themoviedb.org's API (https://developer.themoviedb.org/docs/getting-started)
+- **Solid Architecture:** The MVVM design pattern promotes code clarity and maintainability, while Dagger Hilt streamlines dependency management.
+- **Offline Availability:** Ensuring users best possible experience even without an active internet connection.
 
  ## Getting Started
 
