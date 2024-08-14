@@ -54,7 +54,5 @@ Explore and contribute: Dive into the codebase, share your enhancements, and pro
 ## Contributions
 We welcome your contributions! Whether it's fixing a bug, adding a feature, or improving the documentation, your participation is valued. Join the community!
 
-## Acknowledgments
-Special thanks to the open-source community for their valuable contributions and support.
 
 
