@@ -54,14 +54,12 @@ import com.rksrtx76.cinemax.util.Screen
 
 @Composable
 fun MediaItem(
-    media : Media,
+    media: Media,
     navController: NavController,
     mainUiState: MainUiState,
     modifier: Modifier = Modifier,
-){
-
+) {
     val imageUrl = "${IMAGE_BASE_URL}${media.posterPath}"
-
     val title = media.title
 
     val imagePainter = rememberAsyncImagePainter(
@@ -80,8 +78,8 @@ fun MediaItem(
 
     Box(
         modifier = modifier
-            .padding(bottom = 16.dp, start = 8.dp, end = 8.dp)
-    ){
+            .padding(bottom = 12.dp, start = 4.dp, end = 4.dp)
+    ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -102,11 +100,11 @@ fun MediaItem(
         ) {
             Box(
                 modifier = Modifier
-                    .height(240.dp)
+                    .height(220.dp)
                     .fillMaxSize()
                     .padding(6.dp)
-            ){
-                if(imageState is AsyncImagePainter.State.Success){
+            ) {
+                if (imageState is AsyncImagePainter.State.Success) {
                     val imageBitmap = imageState.result.drawable.toBitmap()
 
                     dominantColor = getAverageColor(imageBitmap = imageBitmap.asImageBitmap())
@@ -122,8 +120,7 @@ fun MediaItem(
                     )
                 }
 
-                if(imageState is AsyncImagePainter.State.Error){
-
+                if (imageState is AsyncImagePainter.State.Error) {
                     dominantColor = MaterialTheme.colorScheme.primary
 
                     Icon(
@@ -139,25 +136,21 @@ fun MediaItem(
                     )
                 }
 
-                if(imageState is AsyncImagePainter.State.Loading){
-
+                if (imageState is AsyncImagePainter.State.Loading) {
                     CircularProgressIndicator(
                         color = MaterialTheme.colorScheme.primary,
                         modifier = Modifier
-//                            .size(150.dp)
                             .align(Alignment.Center),
-//                            .scale(0.5f),
                         strokeWidth = 2.dp
                     )
                 }
             }
 
-            var badgeCount by remember {
-                mutableStateOf(0)
-            }
+            var badgeCount by remember { mutableStateOf(0) }
+
             Text(
                 modifier = Modifier
-                    .padding(horizontal = 12.dp, vertical = 4.dp),
+                    .padding(horizontal = 12.dp, vertical = 2.dp),
                 text = title,
                 fontFamily = font,
                 fontSize = 15.sp,
@@ -165,46 +158,42 @@ fun MediaItem(
                 maxLines = 1,
                 color = Color.White,
                 overflow = TextOverflow.Ellipsis,
-                onTextLayout = {    textLayoutResult ->
-                    if(textLayoutResult.hasVisualOverflow){
+                onTextLayout = { textLayoutResult ->
+                    if (textLayoutResult.hasVisualOverflow) {
                         val lineEndIndex = textLayoutResult.getLineEnd(
                             lineIndex = 0,
                             visibleEnd = true
                         )
                         badgeCount = title
                             .substring(lineEndIndex)
-                            .count{
-                                it =='.'
-                            }
+                            .count { it == '.' }
                     }
                 }
             )
 
             val genres = GenresProvider(
                 genre_ids = media.genreIds,
-                allGenres = if(media.mediaType == Constants.MOVIE) mainUiState.moviesGenresList else mainUiState.tvGenresList
+                allGenres = if (media.mediaType == Constants.MOVIE) mainUiState.moviesGenresList else mainUiState.tvGenresList
             )
 
             Text(
                 modifier = Modifier
-                    .padding(horizontal = 12.dp),
+                    .padding(horizontal = 12.dp, vertical = 2.dp),
                 text = genres,
                 fontFamily = font,
                 fontSize = 12.5.sp,
                 maxLines = 1,
                 color = Color.LightGray,
                 overflow = TextOverflow.Ellipsis,
-                onTextLayout = {    textLayoutResult ->
-                    if(textLayoutResult.hasVisualOverflow){
+                onTextLayout = { textLayoutResult ->
+                    if (textLayoutResult.hasVisualOverflow) {
                         val lineEndIndex = textLayoutResult.getLineEnd(
                             lineIndex = 0,
                             visibleEnd = true
                         )
                         badgeCount = genres
                             .substring(lineEndIndex)
-                            .count{
-                                it =='.'
-                            }
+                            .count { it == '.' }
                     }
                 },
             )
@@ -212,7 +201,7 @@ fun MediaItem(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 4.dp, start = 11.dp, end = 16.dp, bottom = 8.dp),
+                    .padding(top = 2.dp, start = 11.dp, end = 16.dp, bottom = 8.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
@@ -237,3 +226,4 @@ fun MediaItem(
         }
     }
 }
+

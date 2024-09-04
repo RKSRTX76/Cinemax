@@ -4,7 +4,7 @@ import com.rksrtx76.cinemax.main.data.local.media.MediaEntity
 import com.rksrtx76.cinemax.main.data.remote.dto.MediaDto
 import com.rksrtx76.cinemax.main.domain.model.Media
 import com.rksrtx76.cinemax.util.Constants
-
+// This one is used for assign default values
 fun MediaEntity.toMedia(
     type : String,
     category : String

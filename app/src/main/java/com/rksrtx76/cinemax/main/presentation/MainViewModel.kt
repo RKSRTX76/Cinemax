@@ -599,6 +599,7 @@ class MainViewModel @Inject constructor(
         fetchFromRemote: Boolean = true,
         isRefresh: Boolean = false
     ) {
+
         viewModelScope.launch {
             mediaRepository
                 .getUpcomingMoviesList(
@@ -636,10 +637,10 @@ class MainViewModel @Inject constructor(
                                         )
                                     }
                                 }
-                                createSpecialList(
-                                    mediaList = mediaList,
-                                    isRefresh = isRefresh
-                                )
+//                                createSpecialList(
+//                                    mediaList = mediaList,
+//                                    isRefresh = isRefresh
+//                                )
                             }
                         }
                     }

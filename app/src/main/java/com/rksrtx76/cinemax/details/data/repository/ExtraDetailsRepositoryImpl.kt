@@ -152,7 +152,7 @@ class ExtraDetailsRepositoryImpl @Inject constructor(
         emit(Resource.Loading())
         try {
             val videoIds = fetchRemoteForVideoIds(type, id, apiKey)
-            Log.d("EmittedVideoIds", videoIds.toString()) // Add this line to log the emitted video IDs
+            Log.d("EmittedVideoIds", videoIds.toString())
             if (videoIds != null && videoIds.isNotEmpty()) {
                 emit(Resource.Success(videoIds))
             } else {
@@ -173,7 +173,7 @@ class ExtraDetailsRepositoryImpl @Inject constructor(
             val videoKeys = response?.results
                 ?.filter { it.site == "YouTube" && (it.type == "Trailer" || it.type == "Teaser") }
                 ?.mapNotNull { it.key }
-            Log.d("VideoKeys", videoKeys.toString()) // Add this line to log the extracted keys
+            Log.d("VideoKeys", videoKeys.toString())
             videoKeys
         } catch (e: Exception) {
             Log.e("VideosError", "Error fetching videos: ${e.localizedMessage}")

@@ -19,8 +19,8 @@ fun AutoSwipeSection(
             mediaList = mainUiState.specialList.take(7),
             navController = navController,
             modifier = Modifier
-                .height(400.dp)
-                .fillMaxWidth(0.85f)
+                .height(450.dp)
+                .fillMaxWidth(0.9f)
         )
     }
 }

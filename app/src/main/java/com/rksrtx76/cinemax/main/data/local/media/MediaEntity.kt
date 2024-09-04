@@ -3,6 +3,9 @@ package com.rksrtx76.cinemax.main.data.local.media
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+// We can directly use Media as entity since it is a data class
+// but it's better to use MediaEntity to maintainability that's why we extra created a mapper file
+// to assign default values
 
 @Entity
 data class MediaEntity(

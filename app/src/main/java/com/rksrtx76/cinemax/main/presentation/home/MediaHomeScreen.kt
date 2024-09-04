@@ -98,18 +98,18 @@ fun MediaHomeScreen(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .background(MaterialTheme.colorScheme.surface)
-                .padding(top = BigRadius.dp)
+                .padding(top = 62.dp)
         ) {
 
             if(mainUiState.specialList.isEmpty()){
                 Box(
                     modifier = Modifier
-                        .height(220.dp)
+                        .height(450.dp)
                         .fillMaxWidth(0.9f)
-                        .padding(top = 20.dp, bottom = 12.dp)
-                        .clip(RoundedCornerShape(MediumRadius))
+//                        .padding(top = 20.dp, bottom = 12.dp)
+//                        .clip(RoundedCornerShape(MediumRadius))
                         .shimmerEffect(false)
-                        .align(CenterHorizontally)
+//                        .align(CenterHorizontally)
                 )
             }
             else{

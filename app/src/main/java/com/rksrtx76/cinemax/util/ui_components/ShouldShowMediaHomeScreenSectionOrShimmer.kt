@@ -27,14 +27,29 @@ fun ShouldShowMediaHomeScreenSectionOrShimmer(
         Constants.trendingAllListScreen ->{
             stringResource(R.string.trending)
         }
+        Constants.popularScreen -> {
+            stringResource(R.string.popular)
+        }
         Constants.tvSeriesScreen ->{
             stringResource(R.string.tv_series)
+        }
+        Constants.topRatedAllListScreen -> {
+            stringResource(R.string.top_rated)
+        }
+        Constants.NOW_PLAYING -> {
+            stringResource(R.string.now_playing)
+        }
+        Constants.airingTodayTvSeriesScreen -> {
+            stringResource(R.string.airing_today)
+        }
+        Constants.upcomingMoviesScreen -> {
+            stringResource(R.string.upcoming_movies)
         }
         Constants.recommendedListScreen ->{
             stringResource(R.string.recommended)
         }
         else -> {
-            stringResource(R.string.top_rated)
+            ""
         }
     }
 

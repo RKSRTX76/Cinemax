@@ -1,6 +1,8 @@
 package com.rksrtx76.cinemax.main.data.repository
 
+import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import com.rksrtx76.cinemax.main.data.local.media.MediaDataBase
 import com.rksrtx76.cinemax.main.data.mappers.toMedia
 import com.rksrtx76.cinemax.main.data.mappers.toMediaEntity
@@ -14,6 +16,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -219,6 +223,7 @@ class MediaRepositoryImpl @Inject constructor(
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override suspend fun getUpcomingMoviesList(
         fetchFromRemote: Boolean,
         isRefresh: Boolean,
@@ -236,8 +241,20 @@ class MediaRepositoryImpl @Inject constructor(
 
 //            val currentYear = Calendar.getInstance().get(Calendar.YEAR)
             try {
-                Log.d("UpcomingMoviesList", "Fetching upcoming movies list from API (page: $searchPage)")
+//                Log.d("UpcomingMoviesList", "Fetching upcoming movies list from API (page: $searchPage)")
                 val remoteMediaList = mediaApiService.getUpcomingMoviesList(searchPage, apiKey).results
+                remoteMediaList.forEach{
+                    Log.d("UpcomingMoviesList", "Movie: ${it.title}, Release Date: ${it.release_date}")
+                }
+
+
+                val currentDate = LocalDate.now()
+
+                // Filter out movies with past release dates
+                val upcomingMovies = remoteMediaList.filter {
+                    val releaseDate = it.release_date
+                    releaseDate != null && LocalDate.parse(releaseDate, DateTimeFormatter.ofPattern("yyyy-MM-dd")).isAfter(currentDate)
+                }
 
                 val media = remoteMediaList.map {
                     it.toMedia(
