@@ -33,20 +33,22 @@ fun ListShimmerEffect(
 ) {
     LazyVerticalGrid(
         modifier = Modifier.background(MaterialTheme.colorScheme.surface),
-        contentPadding = PaddingValues(top = radius.dp),
+        contentPadding = PaddingValues(top = radius.dp, start = 8.dp, end = 8.dp),
         columns = GridCells.Fixed(2),
     ) {
 
         header {
             Row(
-                Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center
+                Modifier
+                    .fillMaxWidth()
+                    .padding(start = 16.dp),
+//                horizontalArrangement = Arrangement.Center
             ) {
                 Text(
                     modifier = Modifier
                         .padding(
                             top = 16.dp,
-                            start = 32.dp
+//                            start = 32.dp
                         ),
                     textAlign = TextAlign.Center,
                     text = title,

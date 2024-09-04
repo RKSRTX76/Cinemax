@@ -107,9 +107,9 @@ fun MediaHomeScreen(
                         .height(450.dp)
                         .fillMaxWidth(0.9f)
 //                        .padding(top = 20.dp, bottom = 12.dp)
-//                        .clip(RoundedCornerShape(MediumRadius))
+                        .clip(RoundedCornerShape(16.dp))
                         .shimmerEffect(false)
-//                        .align(CenterHorizontally)
+                        .align(CenterHorizontally)
                 )
             }
             else{

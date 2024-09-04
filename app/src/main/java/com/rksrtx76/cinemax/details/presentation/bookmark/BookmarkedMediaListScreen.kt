@@ -114,7 +114,7 @@ fun BookmarkedMediaListScreen(
             Column {
                 Text(
                     modifier = Modifier
-                        .padding(top = 74.dp, start = 24.dp),
+                        .padding(top = 62.dp, start = 8.dp, end = 8.dp),
                     text = title,
                     color = MaterialTheme.colorScheme.onBackground,
                     fontFamily = font,
@@ -149,17 +149,17 @@ fun BookmarkedMediaListScreen(
 
             LazyVerticalGrid(
                 state = listState,
-                contentPadding = PaddingValues(top = BigRadius.dp),
+                contentPadding = PaddingValues(top = 62.dp, start = 8.dp, end = 8.dp),
                 columns = GridCells.Fixed(2)
             ) {
                 header {
                     Text(
                         modifier = Modifier
-                            .padding(vertical = 16.dp, horizontal = 32.dp),
+                            .padding(vertical = 14.dp, horizontal = 12.dp),
                         text = title,
                         color = MaterialTheme.colorScheme.onBackground,
                         fontFamily = font,
-                        fontSize = 20.sp
+                        fontSize = 24.sp
                     )
                 }
 

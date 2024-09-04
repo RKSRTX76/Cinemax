@@ -48,10 +48,10 @@ fun CastMemberItem(
         )
         val imageState = imagePainter.state
         Box(
-            contentAlignment = Alignment.Center,
             modifier = Modifier
                 .size(80.dp)
-                .clip(CircleShape)
+                .clip(CircleShape),
+            contentAlignment = Alignment.Center,
         ) {
             when (imageState) {
                 is AsyncImagePainter.State.Loading -> {
