@@ -82,7 +82,6 @@ fun CastMemberItem(
                 }
             }
         }
-
         Text(
             text = castMember.name,
             fontFamily = font,
