@@ -79,7 +79,6 @@ fun CastListScreen(
                         )
                     }
                 }
-
                 items(castList.size) { index ->
                     CastMemberItem(
                         castMember = castList[index],

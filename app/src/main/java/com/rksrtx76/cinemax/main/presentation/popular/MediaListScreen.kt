@@ -163,7 +163,6 @@ fun MediaListScreen(
                         fontSize = 24.sp
                     )
                 }
-
                 items(mediaList.size){ index ->
                     MediaItem(
                         media = mediaList[index],

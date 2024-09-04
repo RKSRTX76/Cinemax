@@ -110,7 +110,6 @@ fun BookmarkedMediaListScreen(
             .background(MaterialTheme.colorScheme.surface)
             .nestedScroll(nestedScrollConnection)
     ){
-
         if (mainUiState.bookmarkedMedia.isEmpty()) {
             Column {
                 Text(

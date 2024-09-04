@@ -209,7 +209,6 @@ fun MediaHomeScreen(
                 .align(TopCenter)
                 .padding(top = (BigRadius - 8).dp)
         )
-
     }
     NonFocusedTopBar(
         toolbarOffsetHeightPx = toolbarOffsetHeightPx.floatValue.roundToInt(),

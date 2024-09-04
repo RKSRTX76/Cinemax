@@ -59,7 +59,6 @@ fun MediaMainScreen(
             )
         }
     )
-
 }
 
 @Composable

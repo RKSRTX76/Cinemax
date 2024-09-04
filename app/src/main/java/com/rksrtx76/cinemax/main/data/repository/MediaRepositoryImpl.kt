@@ -239,9 +239,7 @@ class MediaRepositoryImpl @Inject constructor(
                 searchPage = 1
             }
 
-//            val currentYear = Calendar.getInstance().get(Calendar.YEAR)
             try {
-//                Log.d("UpcomingMoviesList", "Fetching upcoming movies list from API (page: $searchPage)")
                 val remoteMediaList = mediaApiService.getUpcomingMoviesList(searchPage, apiKey).results
                 remoteMediaList.forEach{
                     Log.d("UpcomingMoviesList", "Movie: ${it.title}, Release Date: ${it.release_date}")

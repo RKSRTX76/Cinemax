@@ -180,6 +180,7 @@ class ExtraDetailsRepositoryImpl @Inject constructor(
             null
         }
     }
+
     override suspend fun getCastList(
         isRefresh: Boolean,
         type: String,

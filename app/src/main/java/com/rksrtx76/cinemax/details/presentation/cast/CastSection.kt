@@ -98,7 +98,6 @@ fun ShowCast(
                 fontFamily = font,
                 fontSize = 20.sp
             )
-
             LazyRow {
                 items(castList) { castMember ->
                     Box(

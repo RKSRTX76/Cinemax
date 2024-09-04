@@ -126,6 +126,7 @@ fun AutoSwipeImagePager(
                 }
             }
         }
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Row(

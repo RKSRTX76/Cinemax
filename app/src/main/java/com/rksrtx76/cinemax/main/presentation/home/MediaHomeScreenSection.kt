@@ -134,6 +134,5 @@ fun MediaHomeScreenSection(
                 )
             }
         }
-
     }
 }

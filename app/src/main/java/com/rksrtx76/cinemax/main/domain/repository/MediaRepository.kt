@@ -17,7 +17,6 @@ interface MediaRepository {
         category: String
     ): Media
 
-
     suspend fun getMoviesAndTvSeriesList(
         // when we reopen app data should display from database not api
 //        forceFetchFromRemote : Boolean,

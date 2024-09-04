@@ -47,7 +47,6 @@ fun CastMemberItem(
                 .build()
         )
         val imageState = imagePainter.state
-
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
