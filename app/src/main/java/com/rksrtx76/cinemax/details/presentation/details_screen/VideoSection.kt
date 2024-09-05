@@ -28,6 +28,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleOwner
@@ -133,7 +134,8 @@ fun VideoSection(
                 Icon(
                     imageVector = if (media.isBookmarked ) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
                     contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary
+                    tint = colorResource(R.color.ruby_red),
+                    modifier = Modifier.size(30.dp)
                 )
             }
             Box(

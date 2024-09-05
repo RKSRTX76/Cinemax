@@ -114,7 +114,7 @@ fun BookmarkedMediaListScreen(
             Column {
                 Text(
                     modifier = Modifier
-                        .padding(top = 62.dp, start = 8.dp, end = 8.dp),
+                        .padding(top = 62.dp, start = 12.dp, end = 8.dp),
                     text = title,
                     color = MaterialTheme.colorScheme.onBackground,
                     fontFamily = font,
