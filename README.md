@@ -27,25 +27,26 @@ Build and run the project using your preferred ID.
 Explore and contribute: Dive into the codebase, share your enhancements, and provide feedback.
 
 ## Images From The App
-![Screenshot_main](https://github.com/user-attachments/assets/456417f5-20a2-4170-95c1-353082191783)
+<img src="https://github.com/user-attachments/assets/456417f5-20a2-4170-95c1-353082191783" alt="Screenshot_main" width="250"/>
 
-![Screenshot_143](https://github.com/user-attachments/assets/2c2c27d6-df33-4a7f-8a4f-644ee24fcd5d)
+<img src="https://github.com/user-attachments/assets/2c2c27d6-df33-4a7f-8a4f-644ee24fcd5d" alt="Screenshot_143" width="250"/>
 
-![Screenshot-200](https://github.com/user-attachments/assets/3606fb15-0d96-4c61-89a1-7c32ba101725)
+<img src="https://github.com/user-attachments/assets/3606fb15-0d96-4c61-89a1-7c32ba101725" alt="Screenshot-200" width="250"/>
 
-![Screenshot-653](https://github.com/user-attachments/assets/9072cbe5-2e7f-40d6-9343-30f9999e0bcf)
+<img src="https://github.com/user-attachments/assets/9072cbe5-2e7f-40d6-9343-30f9999e0bcf" alt="Screenshot-653" width="250"/>
 
-![Screenshot-918](https://github.com/user-attachments/assets/8615624d-a7b1-47ba-b889-a06043214aea)
+<img src="https://github.com/user-attachments/assets/8615624d-a7b1-47ba-b889-a06043214aea" alt="Screenshot-918" width="250"/>
 
-![Screenshot-057](https://github.com/user-attachments/assets/eee4b39d-7296-47bf-b43c-50ed18101d83)
+<img src="https://github.com/user-attachments/assets/eee4b39d-7296-47bf-b43c-50ed18101d83" alt="Screenshot-057" width="250"/>
 
-![Screenshot-858](https://github.com/user-attachments/assets/ba115b64-b995-4c7d-a348-c86321db05c8)
+<img src="https://github.com/user-attachments/assets/ba115b64-b995-4c7d-a348-c86321db05c8" alt="Screenshot-858" width="250"/>
 
-![Screenshot-1-Cinemax](https://github.com/user-attachments/assets/3c2ce6eb-9d58-4544-92c0-c641d9d30a30)
+<img src="https://github.com/user-attachments/assets/3c2ce6eb-9d58-4544-92c0-c641d9d30a30" alt="Screenshot-1-Cinemax" width="250"/>
 
-![Screenshot-2-Cinemax](https://github.com/user-attachments/assets/5037cfdd-c091-48f7-b578-9a5e71dd4af6)
+<img src="https://github.com/user-attachments/assets/5037cfdd-c091-48f7-b578-9a5e71dd4af6" alt="Screenshot-2-Cinemax" width="250"/>
 
-![Screenshot-3-Cinemax](https://github.com/user-attachments/assets/c8182fcb-fc31-4bb2-86b9-c8d454da8386)
+<img src="https://github.com/user-attachments/assets/c8182fcb-fc31-4bb2-86b9-c8d454da8386" alt="Screenshot-3-Cinemax" width="250"/>
+
 
 
 ## Contributions
