@@ -1,5 +1,7 @@
 # Cinemax : Discover and Connect with Your Favorite Movies!
 
+## V2 Available Now -> https://github.com/RKSRTX76/CINEMAX-V2
+
 ## About the App
 *Cinemax* is a dynamic Android app, crafted with cutting-edge technologies like Jetpack Compose and Kotlin, delivering an immersive experience for movie and TV series enthusiasts. 
 It offers a seamless user experience.The app adheres to clean code principles, ensuring clarity, maintainability, and a robust architecture.
